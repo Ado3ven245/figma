@@ -1,0 +1,226 @@
+
+@keyframes planet3{
+     form{bottom:0;}
+     to{bottom:50px;}
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+a{
+    color:inherit ;
+    text-decoration: none;
+}
+section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+#haupt{
+    height: 100vh;
+    background: url(img/bgMAIN.png);
+    overflow: hidden;
+   
+}
+.haupt-block{
+    flex-direction: column;
+    height: 100vh;
+    
+}
+.about-block{
+    background: url(img/bgABOUT.png);
+    height: 100vh;
+
+}
+.skills-block{
+    background: url(img/bgSKILLS.png);
+    height: 100vh;
+
+}
+.works-block{
+    background: url(img/bgWORKS.png);
+    height: 100vh;
+}
+.comments-block{
+    background: url(img/bgCOMMENTS.png);
+    height: 100vh;
+}
+.haupt-block, .about-block, .skills-block, .works-block, .comments-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 70vh;
+
+}
+.card{ 
+   
+    background: url(img/form1.png);
+    width:874px;
+    height:223px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0 auto 0 auto;
+    z-index: 2;
+}
+
+menu{
+
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    position: fixed;
+    top: 10px;
+    list-style: none;
+    width:100% ;
+    z-index: 100;
+    background-color: #3e0d9442;
+}
+menu a:hover{
+    background-color:#792AFF ;
+}
+menu a{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 10px;
+    background-color: beige;
+    color: #000000;
+    text-decoration: none;
+}
+li{
+    margin: 10px;
+}
+
+
+
+.maskot{
+    height: 100px;
+    width: 100px;
+    margin-right: 600px ;
+    margin-top: -100px;
+}
+.planet{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 113px;
+    right: 10px;
+   
+ 
+}
+
+.card h1{
+    font-size: 50px;
+    text-align: center;
+}
+.card p{
+    position: relative;
+    left: 340px;
+    
+}
+
+.btn{
+    width: 200px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #BBFF2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 5px 5px #2b2d35;
+    transition-duration:0.5s ;
+    
+
+}
+.btn a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+.btn:hover{
+    background-color:#97cd24 ;
+    cursor: pointer;
+    
+    
+}
+
+.big-title{
+    width: 700px;
+    color: aliceblue;
+    font-size: 80px;
+    text-transform:uppercase;
+    text-shadow: 5px 5px black;
+    text-align: center;
+}
+
+.mini-title{
+    color: #2b2d35;
+    font-size: 80px;
+    margin-top:70px;
+    text-transform: uppercase;
+}
+.mini-subtitle{
+    color:#2b2d35;
+    font-size: 20px;
+    font-family: "Comfortaa";
+}
+
+.muving-planet{ 
+    animation-name: planet3;
+    height: 100px;
+    width: 100px;
+    background-image:url("img/moving-planet.png") ;
+    background-position:center ;
+    background-size:cover ;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
+}
+.about11{
+    background-color: #792AFF;
+    width: 894px;
+    height: 298px;
+  
+}
+.form2{
+    height:350px ;  
+    width: 370px;
+    background-image:url("img/form2.png") ;
+    background-repeat: no-repeat;
+    border-radius: 11px 11px;
+}
+.about11 h1{
+    color: aliceblue;
+    font-size: 20px;
+    padding: 50px 50px;
+}
+.about11 a{
+    margin: -10px 50px;
+
+}
+.form2 h3{
+    display: flex;
+    justify-content: center;
+
+}
+.form2 img{
+    width: 300px;
+    height: 150px;
+    margin: 50px 35px;
+}
