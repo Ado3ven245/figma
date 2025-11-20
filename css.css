@@ -38,7 +38,7 @@ section{
     height: 100vh;
     
 }
-.about-block{
+#about{
     background: url(img/bgABOUT.png);
     height: 100vh;
 
@@ -156,16 +156,58 @@ li{
     
     
 }
-
-.big-title{
-    width: 700px;
+.about-content{
+   
+    height: 270px;
+    border-radius: 0px 0px 0px 20px;
+    padding-left: 40px;
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+    
+}
+.about-text{
+    margin-top:30px ;
+    height:220px;
+    width: 370px;
+    padding: 30px;
+    background-color: #792AFF;
+    border-radius: 0px 0px 0px 20px;
+}
+.about-card{
+    background-image: url(img/form2.png);
+    background-repeat: no-repeat;
+    width: 376px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+}
+.about-title{
+    color: #fff;
+    font-size: 20px;
+    max-width: 463px;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa';
+}
+.about{
+    
     color: aliceblue;
     font-size: 80px;
     text-transform:uppercase;
     text-shadow: 5px 5px black;
     text-align: center;
 }
-
+.title{
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    text-shadow: 5px 5px 0 #000000;
+}
 .mini-title{
     color: #2b2d35;
     font-size: 80px;
@@ -198,13 +240,7 @@ li{
     height: 298px;
   
 }
-.form2{
-    height:350px ;  
-    width: 370px;
-    background-image:url("img/form2.png") ;
-    background-repeat: no-repeat;
-    border-radius: 11px 11px;
-}
+
 .about11 h1{
     color: aliceblue;
     font-size: 20px;
