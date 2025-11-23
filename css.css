@@ -3,7 +3,10 @@
      form{bottom:0;}
      to{bottom:50px;}
 }
-
+@keyframes cloud1{
+     form{background-color: rgba(0, 0, 0, 0.5);}
+     to{background-color: rgba(0, 0, 0, 0.5);}
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -165,6 +168,14 @@ li{
     position: relative;
     display: flex;
     
+}
+.cloud{
+   position: absolute;
+   bottom: 0px;
+    animation-name: cloud1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
 }
 .about-text{
     margin-top:30px ;
