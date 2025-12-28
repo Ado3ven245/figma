@@ -66,7 +66,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 70vh;
+    /* min-width: 70vh; */
 
 }
 .card{ 
@@ -301,17 +301,14 @@ li{
 }
 .work1{
     width: 400px;
-    height: 240px;   
     margin-right: 19px;
 }
 .work2{
     width: 400px;
-    height: 240px;
     margin-right: 19px;
 }
 .work3{
     width: 400px;
-    height: 240px;
 }
 .comments img{
     width: 150px;
@@ -341,17 +338,20 @@ li{
 }
 .divPhoto h3{
     padding-top: 10px;
+    padding-right: 50px;
 }
-
+.h33{
+    margin-top:5px;
+     padding-right: 60px;
+}
 .divPhoto p{
-    
+    padding-right: 60px;
     margin-top:14px ;
    line-height: 1.3em;
    color: #00000080;
 }
 .commenth1{
-
-    margin-top: 70px;
+    margin-top: 0px;
     margin-left: 20px;
     border-radius: 2px;  
     background-image: url(img/comment.png);
@@ -361,13 +361,14 @@ li{
     height: 156px;  
 }
 .commenth1 p{
+
     padding: 10px 0px 0px 35px;
     line-height: 1.3em;
     color: #000000;
     font-size: 20px;
 }
 .comments{
-    margin-top: 64px;
+    margin-top: 0px;
     display: flex;
     justify-content:start;
 }
@@ -394,4 +395,113 @@ footer a{
 }
 .active{
     background-color: #792AFF;
+}
+.li:hover{
+    transform: translateY(3px);
+  
+}
+.btn:hover{
+    transform: translateY(3px);
+}
+.activeh{
+    transform: translateY(3px);
+
+}
+@media (max-width:1000px) {
+    .menu {
+        display: none;
+    }
+        .card {
+            width: 320px;
+        }
+        
+    .card h1 {
+        font-size: 30px;
+        padding-top:30px ;
+    }
+    .mini-subtitle{
+        font-size: 15px;
+    }
+    .planet{
+        display: none; /* что то  */
+    }
+    .about{
+        font-size: 50px;
+        padding-top: 30px;
+    }
+    .about-content{
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 0;
+    }
+    .about-card{
+        order: -1;
+        padding-top: 20px;
+        width: 380px;
+        height: 296px;
+    }
+    .about-text{
+        width: 320px;
+        height: 296px;
+    }
+    .skills-card p{
+        margin-top: 300px;
+        font-size: 14px;
+    }
+    .skills-card .btn{
+        margin-top: 216px;
+        padding: 20px;
+    }
+     #skills title{
+       margin-bottom: 40px;
+      
+    }
+    .works div{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .work1, .work2, .work3{
+        width: 300px;
+        margin-bottom: 18px;
+    }
+    .work3{
+        margin-right: 19px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .comments{
+        flex-direction: column;
+        align-items: center;
+    }
+    .commenth1{
+        height: 74px;
+        
+      
+    }
+    #comments .title{
+        padding-top: 0px;
+    }
+    .divPhoto{
+        height: 265px;
+        font-size: 14px;
+        
+    }
+    .divPhoto h3, .h33{
+        font-size: 14px;
+    }
+    .commenth1 p{
+        line-height: 15px;
+        font-size: 14px;
+
+    }
+    .divPhoto p{
+        margin-top: 10px;
+    }
+    .divPhoto, .commenth1{
+        margin: 0 ;
+        margin-bottom: 10px;
+        width: 218px;
+      
+    }
 }

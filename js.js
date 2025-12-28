@@ -32,13 +32,16 @@ window.onscroll = function(){
         classLink = ".a2";
     }
     else{
-        classLink = ".a1";
+        classLink = ".a1 ";
     }
+    let liAnimation = document.querySelector(".li");
     let activeBtn = this.document.querySelector(".active");
     let newActiveBtn = document.querySelector(classLink);
     if(!newActiveBtn.classList.contains("active")){
         newActiveBtn.classList.add("active");
-        activeBtn.classList.remove("active")
+        activeBtn.classList.remove("active");
+          liAnimation.classList.add("activeh");
+       liAnimation.classList.remove("activeh");
     };
 }
 
