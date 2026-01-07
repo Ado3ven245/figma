@@ -407,6 +407,43 @@ footer a{
     transform: translateY(3px);
 
 }
+.mobile-menu{
+       display: none; 
+}
+.mobile-button{
+    display: none;
+}
+.hide{
+    display: none;
+}
+.hz{
+    padding-top: 0px;
+    background-color: #200153;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.mobile-btn{
+    
+    width: 210px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding-top: 5px;
+    border: 3px solid#000000;
+    border-radius: 10px;
+    font-size: 37px;
+    margin-bottom: 25px;
+    
+}
+.off-scroll{
+    overflow: hidden;
+}
 @media (max-width:1000px) {
     .menu {
         display: none;
@@ -474,10 +511,9 @@ footer a{
         flex-direction: column;
         align-items: center;
     }
-    .commenth1{
-        height: 74px;
+    #comments{
+        height: 110vh;
         
-      
     }
     #comments .title{
         padding-top: 0px;
@@ -493,10 +529,12 @@ footer a{
     .commenth1 p{
         line-height: 15px;
         font-size: 14px;
+        padding: 0;
 
     }
     .divPhoto p{
         margin-top: 10px;
+        
     }
     .divPhoto, .commenth1{
         margin: 0 ;
@@ -504,4 +542,35 @@ footer a{
         width: 218px;
       
     }
+    .commenth1{
+        height: 74px;
+        width: 198px;
+        margin: 0;
+        background-image: none;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 2px solid rgb(0, 0, 0);
+        padding: 10px;
+    }
+    footer{
+        height: 300px;
+        justify-content: center ;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin: 0;
+    }
+    footer p{
+        margin: 0;
+        text-align: center;
+    }
+    .mobile-button{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 40px;
+        z-index: 2;
+    }
+   .mobile-button{
+    display:block;
+   }
 }
