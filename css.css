@@ -410,7 +410,7 @@ footer a{
 .mobile-menu{
        display: none; 
 }
-.mobile-button{
+.burger{
     display: none;
 }
 .hide{
@@ -563,14 +563,14 @@ footer a{
         margin: 0;
         text-align: center;
     }
-    .mobile-button{
+    .burger{
         position: absolute;
         right: 10px;
         top: 10px;
         width: 40px;
         z-index: 2;
     }
-   .mobile-button{
+   .burger{
     display:block;
    }
 }

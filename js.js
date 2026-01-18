@@ -1,32 +1,20 @@
 let menu = document.querySelector(".menu");
-let mobileBtn = document.querySelector(".mobile-button")
-
+let mobileBtn = document.querySelector(".burger")
+let mobileButtons = document.querySelectorAll(".mobile-btn")
 let body = document.querySelector(".body")
-
-
+let mobile = document.querySelector(".html-hide")
 menu.addEventListener("click",function(event){
    
     let clickTarget = event.target;
-    console.log(clickTarget);
+    // console.log(clickTarget);
     let activeBtn = document.querySelector(".active");
     if(clickTarget.classList.contains("aa")){
         clickTarget.classList.add("active");
         activeBtn.classList.remove("active")
-        let mobileMenu = document.querySelector(".html-hide")  
-        if(!mobileMenu.classList.contains('hide')){
-            mobileMenu.classList.add('hide');
-
-            console.log('rgrvdv')
-        }
+       
     }
+   
     
-    if(!body.classList.contains("off-scroll") && !mobileMenu.classList.contains("hide")){
-        body.classList.add("off-scroll")
-        console.log("96357-394")
-    }
-    else{
-        body.classList.remove("off-scroll")
-    }
     
 });
 
@@ -35,7 +23,7 @@ let classLink = ".a1" ;
 window.onscroll = function(){
    
     let h =document.documentElement.clientHeight;
-      console.log(h)                
+    //   console.log(h)                
 
     if(window.scrollY >= h*4 ){
         classLink = ".a5";
@@ -53,12 +41,12 @@ window.onscroll = function(){
         classLink = ".a1 ";
     }
     let liAnimation = document.querySelector(".li");
-    let activeBtn = this.document.querySelector(".active");
+    let activeBtn = document.querySelector(".active");
     let newActiveBtn = document.querySelector(classLink);
     if(!newActiveBtn.classList.contains("active")){
         newActiveBtn.classList.add("active");
         activeBtn.classList.remove("active");
-          liAnimation.classList.add("activeh");
+        liAnimation.classList.add("activeh");
        liAnimation.classList.remove("activeh");
 
       
@@ -66,14 +54,38 @@ window.onscroll = function(){
     };
 }
 
-// mobileBtn.addEventListener("click", function(event){
+mobileBtn.addEventListener("click", function(event){
 // mobileMenu.classList.toggle("hide");
+   
+        if(!mobile.classList.contains('hide')){
+            mobile.classList.add('hide');
+
+            
+        }
+        else{mobile.classList.remove("hide")}
+        
+        let mobileMenu = document.querySelector(".html-hide")
+        
+
+        if(!body.classList.contains("off-scroll") && !mobileMenu.classList.contains("hide")){
+            body.classList.add("off-scroll")
+            
+        }
+        else{
+            body.classList.remove("off-scroll")
+        }
+
+})
+
+const links = document.querySelectorAll('.menu-link');
 
 
-
-
-// })
-
-
-
+mobileButtons.forEach(mobileButton => {
+    mobileButton.addEventListener('click', () => {
+       
+        document.body.classList.remove('off-scroll');
+        mobile.classList.add('hide');
+        
+    });
+});
 
